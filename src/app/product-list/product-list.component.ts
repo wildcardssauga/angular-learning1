@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-//import { products } from '../products';
+import { products } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -8,30 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products1 = product1s;
+  products = products;
 
   share() {
     window.alert('The product has been shared!');
   }
 }
 
-export const product1s = [
-  {
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
-  },
-  {
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
-  },
-  {
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
-  }
-];
+
 
 
 /*
